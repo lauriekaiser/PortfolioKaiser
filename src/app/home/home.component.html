@@ -1,0 +1,94 @@
+<body>
+<h1>Laurie Kaiser</h1>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+<div class="row">
+ 
+  
+  <div *ngIf="aboutmeclicked">
+    
+    <div class="aboutme">
+      <h2>About Me</h2>
+      <p>I am a frontend developer who is passionate and confident about building software that improves the lives of others.  I have a strong desire to continue to learn and grow by collaborating with other talented people to achieve goals.</p>
+      <br>
+      <p>In 2020 I was chosen to be a Computer Science Champion at the elementary school in which I was employed.  As I learned very simple code to implement to the third graders in my classroom, I made a decision to learn more about coding in the years to come.  When I fully committed to a career change in 2022, I dove into learning as much as I could to make a successful transition to software development.</p>
+      <br>
+      <p>I have developed and designed websites using HTML, CSS, JavaScript, and Angular while earning a certificate for frontend development from Simplilearn.</p>
+    </div>
+  </div>
+  <div *ngIf="projectsclicked" id="projects">
+    <div class="row">
+    <div class="card" style="width: 18rem; height: 25rem;">
+      <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2lnbmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Gym Member Sign In</h5>
+        <p class="card-text">A drag and drop sign-in system to make the check-in process smoother; created using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/lauriekaiser/GymSignIn" class="btn btn-secondary">Check it Out</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 25rem;">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Airline Website</h5>
+        <p class="card-text">Book a flight with this airline website; created using Angular.</p>
+        <a href="https://github.com/lauriekaiser/KaiserAir/tree/master" class="btn btn-secondary">Check it Out</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 25rem;">
+      <img src="https://images.unsplash.com/photo-1606326608690-4e0281b1e588?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cXVpenxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Quiz</h5>
+        <p class="card-text">A multiple choice quiz; created using HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/lauriekaiser/TeachingQuiz/tree/master" class="btn btn-secondary">Check it Out</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<div *ngIf="contactclicked" id="contact">
+  
+  <a href="https://github.com/lauriekaiser" id="github">
+     <img src="data:image/png;base64,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" alt="">
+     </a>
+     <a href="https://www.linkedin.com/in/laurie-kaiser-1ba203271/" id="linkedin"> 
+      <img src="data:image/png;base64,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">
+     </a>
+    
+</div>
+
+<div class="card" style="width: 18rem; height: 35rem" *ngIf="!aboutmeclicked">
+    <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." style="height: 400px">
+    <div class="card-body">
+      <h5 class="card-title">About Me</h5>
+      <p class="card-text">Learn more about Laurie Kaiser.</p>
+      <button type="button" class="btn btn-primary" (click)="btnclick()"> About Me</button>
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem; height: 35rem" *ngIf="!projectsclicked">
+    <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." style="height: 400px">
+    <div class="card-body">
+      <h5 class="card-title">Projects</h5>
+      <p class="card-text">Here are some examples of projects I have completed.</p>
+      <a href="#" class="btn btn-primary" (click)="theclick()">Projects</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem; height: 35rem" *ngIf="!contactclicked">
+    <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." style="height: 400px">
+    <div class="card-body">
+      <h5 class="card-title">Contact Me</h5>
+      <p class="card-text">Please reach out to me, I would love to hear from you.</p>
+      <a href="#" class="btn btn-primary" (click)="onclick()">Contact Me</a>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
